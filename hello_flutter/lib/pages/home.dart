@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_flutter/types.dart';
+import 'package:hello_flutter/widgets/types.dart';
 //import 'package:flutter/services.dart' show rootBundle;
 
 import 'dart:io';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hello_flutter/effectiveness.dart';
-import 'package:hello_flutter/type_color.dart';
-import 'package:hello_flutter/type_id.dart';
-import 'package:hello_flutter/type_name.dart';
+import 'package:hello_flutter/data/effectiveness.dart';
+import 'package:hello_flutter/data/type_color.dart';
+import 'package:hello_flutter/data/type_id.dart';
+import 'package:hello_flutter/data/type_name.dart';
 
 
 class Types extends StatefulWidget {
