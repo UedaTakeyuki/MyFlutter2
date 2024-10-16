@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'immutable_widget.dart';
+import 'text_layout.dart';
 
 class BasicScreen extends StatelessWidget {
   const BasicScreen({super.key});
@@ -17,11 +18,14 @@ class BasicScreen extends StatelessWidget {
             child: Icon(Icons.edit),
           ),
         ],  ),
-      body: Center(
-        child: AspectRatio(
-          aspectRatio: 1.0,
-          child: ImmutableWidget(),
-        ),
+      body: Column(
+        children: const [
+          AspectRatio(
+            aspectRatio: 1.0,
+            child: ImmutableWidget(),
+          ),
+          TextLayout(),
+        ],
       ),
       drawer: Drawer(
         child: Container(
