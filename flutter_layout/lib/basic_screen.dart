@@ -19,12 +19,14 @@ class BasicScreen extends StatelessWidget {
           ),
         ],  ),
       body: Column(
-        children: const [
-          AspectRatio(
-            aspectRatio: 1.0,
-            child: ImmutableWidget(),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children:[
+          Semantics(
+              image: true,
+              label: 'A beautiful beach',
+              child: Image.asset('assets/beach.jpg')
           ),
-          TextLayout(),
+          const TextLayout(),
         ],
       ),
       drawer: Drawer(
