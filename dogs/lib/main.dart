@@ -1,6 +1,8 @@
 import 'package:dogs/profile_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'flex_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -31,7 +33,8 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         primarySwatch: Colors.blue,
       ),
-      home: ProfileScreen(),
+    home:FlexScreen(),
+//      home: ProfileScreen(),
     );
   }
 }
