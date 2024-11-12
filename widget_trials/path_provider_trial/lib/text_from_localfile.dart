@@ -26,12 +26,13 @@ class TextFromLocalFile extends StatelessWidget {
 Future<String> getText() async {
   final directory = await getApplicationSupportDirectory();
   final path = directory.path;
+  debugPrint("path: $path");
   final file = File('$path/hoge.txt');
 
   // ファイルがなかった時だけ書き込む
   if (!await file.exists()) {
-    await file.create();
-    await file.writeAsString('aiueo');
+//    await file.create();
+//    await file.writeAsString('aiueo');
   }
 
   String data = "あほ";
